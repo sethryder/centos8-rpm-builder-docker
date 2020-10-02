@@ -1,2 +1,10 @@
-# centos8-rpm-builder-docker
-Docker CentOS 8 RPM Builder 
+# Docker CentOS 8 RPM Builder
+
+Example usage:
+
+``` shell
+docker run --rm \
+  -v ${PWD}:/rpmbuild \
+  lest/centos7-rpm-builder \
+  bin/build-spec SPECS/my-package.spec
+```
